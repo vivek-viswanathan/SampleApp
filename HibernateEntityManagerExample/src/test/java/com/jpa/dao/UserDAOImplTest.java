@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import com.jpa.core.ApplicationUser;
 
-public class AddressDAOImplTest {
+public class UserDAOImplTest {
 
 	@Test
 	public void testSaveApplicationUser() {
