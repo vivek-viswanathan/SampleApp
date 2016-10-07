@@ -5,13 +5,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
-import com.sample.spring.service.TestService;
+import com.sample.spring.service.SampleService;
 
 @Component
-public class TestAction {
+public class SampleAction {
 
 	@Autowired
-	private TestService testService;
+	private SampleService sampleService;
 
 	public static void main (String args[]) {
 
@@ -31,11 +31,14 @@ public class TestAction {
 		However after autowiring 'testAction' as @Component and accessing the same using the below line, we will get the bean from the Spring context.
 		So Spring takes care of autowiring 'testService'.
 		*/
-		context.getBean(TestAction.class).actionMethod();
+		context.getBean(SampleAction.class).actionMethod();
+		
+		//Alternatively you can also call the service method in the following manner
+		//context.getBean(SampleService.class).serviceMethod();
 	}
 
 	public void actionMethod() {
-		System.out.println(testService.serviceMethod());
+		System.out.println(sampleService.serviceMethod());
 	}
 
 }

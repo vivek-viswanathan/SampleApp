@@ -1,4 +1,4 @@
-package com.sample.spring.dao;
+package com.sample.spring.dao.impl;
 
 import javax.sql.DataSource;
 
@@ -6,9 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import com.sample.spring.dao.SampleDAO;
 
-@Repository("testDao")
-public class TestDAO {
+@Repository("sampleDao")
+public class SampleDAOImpl extends SampleDAO {
 
 	private JdbcTemplate jdbcTemplate;
 
