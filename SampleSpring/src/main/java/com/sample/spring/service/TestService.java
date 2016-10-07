@@ -1,9 +1,9 @@
-package com.sample.test.service;
+package com.sample.spring.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sample.test.dao.TestDAO;
+import com.sample.spring.dao.TestDAO;
 
 @Service("testService")
 public class TestService {

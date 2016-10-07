@@ -1,4 +1,4 @@
-package com.sample.test.dao;
+package com.sample.spring.dao;
 
 import javax.sql.DataSource;
 

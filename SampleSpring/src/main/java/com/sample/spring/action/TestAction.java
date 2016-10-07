@@ -1,11 +1,11 @@
-package com.sample.test.action;
+package com.sample.spring.action;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
-import com.sample.test.service.TestService;
+import com.sample.spring.service.TestService;
 
 @Component
 public class TestAction {
