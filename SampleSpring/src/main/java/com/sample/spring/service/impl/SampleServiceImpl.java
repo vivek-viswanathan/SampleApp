@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.sample.spring.dao.SampleDAO;
 import com.sample.spring.service.SampleService;
 
-@Service("sService")
+@Service("sampleService")
 public class SampleServiceImpl extends SampleService {
 
 	@Autowired
